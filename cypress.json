@@ -1,3 +1,22 @@
 {
-  "baseUrl": "http://localhost:1337"
+  "baseUrl": "http://localhost:1337",
+
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 60000,
+  "execTimeout": 300000,
+  "pageLoadTimeout": 1000000,
+  "requestTimeout": 30000,
+  "responseTimeout": 30000,
+
+  "reporter": "mochawesome",
+  "reporterOptions": {
+      "reportDir": "cypress/reports",
+      "reportFilename": "report",
+      "overwrite": false,
+      "inline": true,
+      "html": true,
+      "json": true,
+      "charts": true
+  },
+  "video": false
 }
